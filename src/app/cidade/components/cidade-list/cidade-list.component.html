@@ -3,10 +3,10 @@
 
 <div class="select ">
     <mat-form-field>
-      <mat-label>Estados</mat-label>
+      <mat-label>cidades</mat-label>
       <mat-select>
-        <mat-option *ngFor="let estado of estados" [value]="estado.id">
-          {{estado.nome}}
+        <mat-option *ngFor="let cidades of cidades" [value]="cidades.id">
+          {{cidades.nome}}
         </mat-option>
       </mat-select>
     </mat-form-field>
@@ -26,12 +26,6 @@
         <td mat-cell *matCellDef="let cidades"> 
           <a routerLink="/estados/edit/{{cidades.id}}"> {{cidades.nome}} </a> 
         </td>
-      </ng-container>
-    
-      <!-- Sigla Column -->
-      <ng-container matColumnDef="sigla-column">
-          <th mat-header-cell *matHeaderCellDef> Sigla </th>
-          <td mat-cell *matCellDef="let cidades"> {{cidades.Estados}} </td>
       </ng-container>
     
       <tr mat-header-row *matHeaderRowDef="tableColumns"></tr>

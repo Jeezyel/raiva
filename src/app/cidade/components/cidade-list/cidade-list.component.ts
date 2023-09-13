@@ -13,8 +13,8 @@ import { EstadoService } from 'src/app/services/estado.service';
   styleUrls: ['./cidade-list.component.css']
 })
 export class CidadeListComponent {
-  tableColumns: string[] = ['id-column', 'nome-column', 'sigla-column'];
-  cidades : Cidade[] =[];
+  tableColumns: string[] = ['id-column', 'nome-column'];
+  cidades : Cidade[] = [];
 
 
   estados: Estado[] = [];

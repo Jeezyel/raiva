@@ -8,6 +8,7 @@ import { MatSelectModule } from '@angular/material/select';
 
 
 import {MatButtonModule} from '@angular/material/button';
+import { MatTable, MatTableModule } from '@angular/material/table';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatSelectModule,
     MatButtonModule,
     CommonModule,
-    CidadeRoutingModule
+    CidadeRoutingModule,
+    MatTableModule
   ]
 })
 export class CidadeModule { }
